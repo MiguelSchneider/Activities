@@ -1,0 +1,17 @@
+{
+  "name": "Posterize",
+  "description": "Have fun with Firefox OS",
+  "launch_path": "/index.html",
+  "developer": {
+    "name": "Miguel Schneider",
+    "url": "https://claudanscorner.com"
+  },
+  "installs_allowed_from": ["*"],
+  "permissions": {
+  },
+  "default_locale": "en-US",
+  "icons": {
+    "128": "/images/icons/Icon.png"
+  },
+    "orientation": "portrait-primary"
+}

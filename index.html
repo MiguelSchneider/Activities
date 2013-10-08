@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+		<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
+
+
+		<script type="text/javascript" src="scripts/pixastic.custom.js"></script>
+		<script type="text/javascript" src="scripts/spin.min.js"></script>
+		<script type="text/javascript" src="scripts/posterize.js"></script>
+
+		<link href="css/panes.css" rel="stylesheet" type="text/css">
+
+		<style type="text/css">
+
+			/*
+			 * Web Fonts from thesitewhereyougotit.com
+			 *
+			 * Font copyright information, which you should
+			 * never delete and should always be included
+			 * in your CSS where ever you call the fonts files.
+			 * Copyrights matter.
+			 *
+			 * 
+			 * http://www.fontsquirrel.com/fonts/web-symbols
+			 * 
+			 */
+			 
+			 @font-face {
+			 	font-family: WebSymbol;
+			 	src: url("WebSymbols-Regular.otf") format("opentype");
+			 }
+
+			 .sym {
+			 	font-family: "WebSymbol";
+			 	font-size: 1.5em;
+			 	line-height: 1;
+			 }		
+
+		</style>
+	</head>
+
+	<body onload=init()>
+		<div class="header row tab">
+			<h1>Posterize</h1>			
+		</div>
+		<div id="main" class="body row scroll-y">
+			<canvas id="myCanvas" ></canvas>
+		</div>
+		<div class="footer row">
+			<!--   <p>My footer. Could put icons here.</p> -->
+			<p>
+				<button class="button" 			  id="pick" >            <span class="sym">I</span> </button> 
+				<button class="button  unclicked" id="poster" disabled>  <span class="sym">X</span>  </button>
+				<button class="button  unclicked" id="share" disabled>   <span class="sym">t</span>  </button>
+
+			</p>
+		</div>
+	</body>
+</html>

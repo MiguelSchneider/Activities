@@ -1,0 +1,6 @@
+CACHE MANIFEST 
+#2013-03-25:v1
+CACHE:
+index.html
+FALLBACK:
+/index.html /offline.html

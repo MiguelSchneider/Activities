@@ -1,0 +1,151 @@
+﻿/* Generic pane rules */
+body { margin: 0; -webkit-text-size-adjust: 100%; }
+.page { left: 0; right: 0; top: 0; bottom: 0; }
+.row, .col, .page { overflow: hidden; position: absolute; }
+.row { left: 0; right: 0; }
+.col { top: 0; bottom: 0; }
+.scroll-x { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+.scroll-y { overflow-y: auto; -webkit-overflow-scrolling: touch; }
+.fill, .pane { position: absolute; left: 0; top: 0; right: 0; bottom: 0; width: 100%; height: 100% }
+.pane { display: none; }
+
+/* Workaround: in landscape mode, IEMobile makes bottom toolbar overlap the page, so shorten the page by 75px to compensate */
+.iemobile .page { bottom: -6px; }
+@media screen and (orientation:landscape) { .iemobile .page { bottom: 75px; } }
+
+			.header.row {
+				background: none repeat scroll 0 0 #333333;
+				height: 55px;
+			}
+			.header.row h1 {
+				font-size:1.6em;
+			}
+			.header.row h2 {
+				background-color: #FFFFFF;
+				border-radius: 0 20px 0 0;
+				color: #33BD33;
+				float: left;
+				font-size: 1.2em;
+				height: 100%;
+				margin-bottom: 0px;
+				margin-left: -1em;
+				margin-top: .5em;
+				padding-left: 0;
+				padding-top: 0.8em;
+				text-align: center;
+				vertical-align: bottom;
+				width: 6em;
+			}
+			.header.row h2:active {
+				background-color:red;
+				-moz-transition-duration: 0.2s;
+				-moz-transform: scale(0.95);
+			}
+
+			.body.row {
+				padding: 1em;
+				top: 75px;
+				height: 70%;
+			}
+			.footer.row {
+				background: none repeat scroll 0 0 #333333;
+				bottom: 0;
+				height: 70px;
+			}
+			body {
+				/*
+				background:
+				radial-gradient(black 15%, transparent 16%) 0 0,
+				radial-gradient(black 15%, transparent 16%) 8px 8px,
+				radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+				radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+				background-color:#282828;
+				background-size:16px 16px;
+				*/
+				color: White;
+				font-family: Segoe UI, Helvetica, Arial, Sans-Serif;
+			}
+			
+			.header, .footer {
+				padding: 0 1em;
+				text-align: center;
+			}
+			
+			#ImagePresenter {
+				/*
+			    background: -moz-linear-gradient(center top , #9DCE2C 5%, #8CB82B 100%) repeat scroll 0 0 #9DCE2C;
+			    border: 1px solid #83C41A;
+			    border-radius: 3px 0;
+			    box-shadow: 0 1px 0 0 #C1ED9C inset;
+			    color: #FFFFFF;
+			    display: inline-block;
+			    font-family: Arial;
+			    font-size: 24px;
+			    font-style: normal;
+			    font-weight: bold;
+			    */
+			    height: 3.9em;
+			    padding: 1em;
+			    text-align: center;
+			}
+			#ImagePresenter img {
+				width:60%;
+				position:absolute;
+				top:0;
+				left:20%;
+				border-radius:10px;
+			}
+			.downable:active {
+				background-color:red;
+				-moz-transition-duration: 0.1s;
+				-moz-transform: scale(0.85);
+				
+			}
+			
+			#myCanvas {
+				width:80%;
+				height:70%;
+				position:absolute;
+				top:0;
+				left:10%;
+				border-radius:10px;
+			}
+
+			.unclicked{
+				opacity: .4;
+				background: grey;
+			}
+			
+			
+			.button {
+				background: -moz-linear-gradient(center top , #9DCE2C 5%, #8CB82B 100%) repeat scroll 0 0 #9DCE2C;
+				border: 1px solid #83C41A;
+				border-radius: 37px 0;
+				box-shadow: 0 1px 0 0 #C1ED9C inset;
+				color: #FFFFFF;
+				display: inline-block;
+				font-family: Arial;
+				font-size: 15px;
+				font-style: normal;
+				font-weight: bold;
+				height: 40px;
+				line-height: 40px;
+				text-align: center;
+				text-decoration: none;
+				text-indent: 0;
+				text-shadow: 2px 2px 0 #689324;
+				width: 80px;
+			}
+			.button:hover {
+				background: -moz-linear-gradient(center top , #8CB82B 5%, #9DCE2C 100%) repeat scroll 0 0 #8CB82B;
+			}
+			.button:active {
+				position: relative;
+				top: 1px;
+			}	
+			.button::-moz-focus-inner {
+				outline: 0;
+				border: 0;
+			}
+			
+	

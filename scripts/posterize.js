@@ -82,6 +82,7 @@ function buttonController(evt) {
 						document.getElementById("myCanvas").style.opacity = 0.2;
 						document.getElementById("poster").classList.add("unclicked");
 						document.getElementById("poster").disabled = true;
+						document.getElementById("help").style.opacity = 0.0;
 						setTimeout(function(){
 	 						if (img.complete) {	// make sure the image is fully loaded
 	 							var canvas=document.getElementById("myCanvas");

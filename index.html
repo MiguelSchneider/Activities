@@ -37,6 +37,14 @@
 			 	line-height: 1;
 			 }		
 
+			 #help {
+			 	color: #9DCE2C;
+			 	font-size: 1.4em;
+			 	z-index: 100;
+			 	padding-left: 1.4em;
+			 }
+
+
 		</style>
 	</head>
 
@@ -45,7 +53,12 @@
 			<h1>Posterize</h1>			
 		</div>
 		<div id="main" class="body row scroll-y">
-			<canvas id="myCanvas" ></canvas>
+			<div id="help"> 
+			 	<p> <span class="sym">I</span> Open Image </p>
+				<p> <span class="sym">X</span> Posterize Image </p>
+				<p> <span class="sym">t</span> Share Image </p>
+			</div>
+			<canvas id="myCanvas" >	</canvas>
 		</div>
 		<div class="footer row">
 			<!--   <p>My footer. Could put icons here.</p> -->
